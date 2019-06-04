@@ -3,6 +3,11 @@ import React from 'react';
 import PostList from './PostList';
 
 class Post extends React.Component {
+
+  componentDidMount() {
+    this.props.postsRequest()
+  }
+
   render() {
     console.log(this.props)
     return (
