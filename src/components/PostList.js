@@ -1,10 +1,10 @@
 import React from 'react';
 
-const PostList = () => {
+const PostList = (props) => {
   return (
-    <div>
-      PostList
-    </div>
+    <li>
+      {props.title}
+    </li>
   )
 }
 
